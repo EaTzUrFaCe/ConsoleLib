@@ -43,7 +43,8 @@
     <Compile Include="ConsoleAPI.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="Coord.cs" />
-    <Compile Include="Console.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="UI.cs" />
     <Compile Include="Native\OperatingSystem.cs" />
     <Compile Include="Native\Win32.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -25,7 +25,7 @@ namespace ConsoleLib.Native
 
         internal static void Draw(int x, int y, char renderingChar)
         {
-            SafeFileHandle consoleHandle = CreateFile("CONOUT$", 0x40000000, 2, IntPtr.Zero, FileMode.Open, 0, IntPtr.Zero);
+            SafeFileHandle consoleHandle = CreateFile("CONOUT$", 0x40000000, 2, IntPtr.Zero, (FileMode)3, 0, IntPtr.Zero);
             int n = 0;
             WriteConsoleOutputCharacter(consoleHandle, renderingChar.ToString(), 1, new Coord((short)x, (short)y), ref n);
         }
